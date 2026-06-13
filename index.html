@@ -233,12 +233,15 @@
       background: var(--bg3);
       border: 2px solid var(--red);
       border-radius: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #333;
-      font-size: 13px;
+      overflow: hidden;
       margin: 0 auto;
+    }
+
+    .karina-foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .karina-bio { flex: 1; min-width: 280px; }
@@ -599,20 +602,16 @@
       <p class="section-sub">Prints de faturamento, vídeos virais e conquistas reais da Karina no TikTok Shop.</p>
       <div class="gallery-grid">
         <div class="gallery-placeholder">
-          <span class="ph-icon">📸</span>
-          Foto / Print de faturamento
+          <img src="images/resultado1.jpg" alt="Resultado 1" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>📸</span>Foto / Print de faturamento';" />
         </div>
         <div class="gallery-placeholder">
-          <span class="ph-icon">📸</span>
-          Foto / Print de faturamento
+          <img src="images/resultado2.jpg" alt="Resultado 2" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>📸</span>Foto / Print de faturamento';" />
         </div>
         <div class="gallery-placeholder">
-          <span class="ph-icon">📸</span>
-          Foto / Print de faturamento
+          <img src="images/resultado3.jpg" alt="Resultado 3" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>📸</span>Foto / Print de faturamento';" />
         </div>
         <div class="gallery-placeholder">
-          <span class="ph-icon">📸</span>
-          Foto / Print de faturamento
+          <img src="images/resultado4.jpg" alt="Resultado 4" style="width:100%;height:100%;object-fit:cover;border-radius:16px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>📸</span>Foto / Print de faturamento';" />
         </div>
       </div>
     </div>
@@ -628,7 +627,9 @@
   <section class="section karina-section">
     <div class="container">
       <div class="karina-inner">
-        <div class="karina-foto">Foto da Karina</div>
+        <div class="karina-foto">
+          <img src="images/karina.jpg" alt="Karina Cepellos" />
+        </div>
         <div class="karina-bio">
           <div class="badge">Quem vai te ensinar</div>
           <h2>Karina Cepellos</h2>
@@ -718,16 +719,13 @@
       <h2 class="section-title">Histórias reais de <em>quem aplicou o método</em></h2>
       <div class="depo-grid">
         <div class="depo-placeholder">
-          <span class="ph-icon">💬</span>
-          Depoimento / Print de aluna
+          <img src="images/depoimento1.jpg" alt="Depoimento 1" style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>💬</span>Depoimento / Print de aluna';" />
         </div>
         <div class="depo-placeholder">
-          <span class="ph-icon">💬</span>
-          Depoimento / Print de aluna
+          <img src="images/depoimento2.jpg" alt="Depoimento 2" style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>💬</span>Depoimento / Print de aluna';" />
         </div>
         <div class="depo-placeholder">
-          <span class="ph-icon">💬</span>
-          Depoimento / Print de aluna
+          <img src="images/depoimento3.jpg" alt="Depoimento 3" style="width:100%;height:100%;object-fit:cover;border-radius:18px;display:block;" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'ph-icon\'>💬</span>Depoimento / Print de aluna';" />
         </div>
       </div>
     </div>
