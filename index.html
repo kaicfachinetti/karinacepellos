@@ -204,17 +204,12 @@
       background: var(--bg3);
       border: 1px solid #2a2a2a;
       border-radius: 16px;
-      aspect-ratio: 4/5;
-      position: relative;
       overflow: hidden;
     }
 
     .gallery-placeholder img {
-      position: absolute;
-      inset: 0;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
       display: block;
     }
 
@@ -294,6 +289,28 @@
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-top: 2px;
+    }
+
+    /* ── CONEXÕES ── */
+    .conexoes-section { background: var(--bg2); }
+
+    .conexoes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .conexao-card {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+    }
+
+    .conexao-card img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     /* ── MÓDULOS ── */
@@ -616,12 +633,6 @@
         <div class="gallery-placeholder">
           <img src="images/Resultados%20Abril%202026.jpeg" alt="Resultados Abril 2026" />
         </div>
-        <div class="gallery-placeholder">
-          <img src="images/image%20com%20Autoridade%20Celso%20Portioli.jpeg" alt="Com Celso Portioli" />
-        </div>
-        <div class="gallery-placeholder">
-          <img src="images/Live%20com%20Autoridade%20Simone%20Mendes%20%281%29.jpeg" alt="Live com Simone Mendes" />
-        </div>
       </div>
     </div>
     <div style="text-align:center; margin-top: 40px;">
@@ -668,6 +679,35 @@
     </div>
     <div style="text-align:center; margin-top: 48px;">
       <a href="https://chat.whatsapp.com/Gn2uww3fh23FPGaWWFPwsw?s=cl&amp;p=i&amp;ilr=1" target="_blank" rel="noopener" class="cta-btn">Quero entrar no Grupo VIP!</a>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       CONEXÕES
+  ═══════════════════════════════════════ -->
+  <section class="section conexoes-section">
+    <div class="container text-center">
+      <div class="badge">O poder do TikTok Shop</div>
+      <h2 class="section-title">Pessoas que ela <em>nem imaginava</em> que conheceria</h2>
+      <p class="section-sub">O TikTok Shop não gerou só renda — abriu portas e criou conexões que a Karina nunca esperava.</p>
+      <div class="conexoes-grid">
+        <div class="conexao-card">
+          <img src="images/image%20com%20Autoridade%20Celso%20Portioli.jpeg" alt="Com Celso Portioli" />
+        </div>
+        <div class="conexao-card">
+          <img src="images/Live%20com%20Autoridade%20Simone%20Mendes%20%281%29.jpeg" alt="Live com Simone Mendes" />
+        </div>
+        <div class="conexao-card">
+          <img src="images/Live%20com%20Autoridade%20Simone%20Mendes%20%282%29.jpeg" alt="Live com Simone Mendes" />
+        </div>
+        <div class="conexao-card">
+          <img src="images/Live%20com%20Autoridade%20Simone%20Mendes%20%283%29.jpeg" alt="Live com Simone Mendes" />
+        </div>
+        <div class="conexao-card">
+          <img src="images/Live%20com%20Autoridade%20Simone%20Mendes%20%284%29.jpeg" alt="Live com Simone Mendes" />
+        </div>
+      </div>
     </div>
   </section>
 
